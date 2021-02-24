@@ -25,6 +25,7 @@ struct ContentView: View {
                 Text("2B")
                 Text("2C")
             }
+            
             HStack {
                 Text("3A")
                 Text("3B")
