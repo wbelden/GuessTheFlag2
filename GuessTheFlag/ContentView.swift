@@ -10,28 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing:20) {
-            HStack {
-                Text("1A")
-                    .font(.largeTitle)
-                Text("1B")
-                    .font(.largeTitle)
-                    .fontWeight(.thin)
-                    
-                Text("1C")
-            }
-            HStack {
-                Text("2A")
-                Text("2B")
-                Text("2C")
-            }
-            
-            HStack {
-                Text("3A")
-                Text("3B")
-                Text("3C")
-            }
-            
+        ZStack {
+            LinearGradient(gradient: Gradient(colors:[Color.blue, Color.purple]), startPoint: .bottomLeading, endPoint: .topTrailing)
+            //Color.gray.edgesIgnoringSafeArea(.all)
+            Color.black.frame(width: 200, height: 100)
+                .cornerRadius(20)
+            Text("Hello there.")
+                .foregroundColor(.white)
         }
     }
 }
@@ -41,4 +26,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
