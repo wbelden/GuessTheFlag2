@@ -10,7 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack(spacing:20) {
+            HStack {
+                Text("1A")
+                    .font(.largeTitle)
+                Text("1B")
+                    .font(.largeTitle)
+                    .fontWeight(.thin)
+                    
+                Text("1C")
+            }
+            HStack {
+                Text("2A")
+                Text("2B")
+                Text("2C")
+            }
+            HStack {
+                Text("3A")
+                Text("3B")
+                Text("3C")
+            }
+            
+        }
     }
 }
 
@@ -19,3 +40,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
